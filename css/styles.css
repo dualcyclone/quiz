@@ -1,0 +1,81 @@
+* {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+
+article {
+    height: 20vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#main {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+#questions {
+    display: flex;
+}
+
+section {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    height: 100px;
+    width: 150px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column;
+}
+
+section h1 {
+    margin: 0;
+    padding: 0;
+}
+
+section button {
+    display: block;
+    height: 50px;
+    width: 100px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background: #000;
+    color: #fff;
+}
+
+section p {
+    font-size: 10px;
+}
+
+.previous, .next {
+    height: 120px;
+    width: 50px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background: #000;
+    color: #fff;
+    font-size: 40px;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.previous:hover, .next:hover {
+    background: #333;
+}
+
+.previous {
+    transform: rotate(180deg);
+}
