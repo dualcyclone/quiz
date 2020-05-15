@@ -45,10 +45,11 @@
     flex-flow: column;
     justify-content: space-around;
     align-items: center;
+    text-align: center;
     margin: 20px;
 }
 #audio.picture article {
-    height: 10vh;
+    height: 25vh;
 }
 
 #audio #main {
@@ -60,7 +61,7 @@
 }
 
 #audio.picture #main {
-    height: 90vh;
+    height: 75vh;
 }
 
 #audio #questions {
@@ -103,8 +104,7 @@
 }
 
 #audio section img {
-    max-width: 390px;
-    max-height: 490px;
+    max-width: 56vw;
 }
 
 #audio section p {
