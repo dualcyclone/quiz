@@ -4,16 +4,54 @@
     padding: 0;
 }
 
-article {
-    height: 20vh;
+#home ul {
+    height: 100vh;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home ul li {
+    display: table;
+    border: 1px solid #000;
+    border-radius: 10px;
+    width: 120px;
+    height: 75px;
+    margin: 0 10px 10px 0;
+}
+#home ul li, #home ul li a {
+    color: #000;
+    background: #fff;
+}
+#home ul li:hover, #home ul li:hover a {
+    color: #fff;
+    background: #000;
+}
+#home ul li a {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+}
+#home ul li a:hover, #home ul li a:visited {
+    text-decoration: none;
+}
+
+#audio article {
+    height: 30vh;
     display: flex;
     flex-flow: column;
     justify-content: space-around;
     align-items: center;
+    margin: 20px;
+}
+#audio.picture article {
+    height: 10vh;
 }
 
-#main {
-    height: 80vh;
+#audio #main {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,11 +59,16 @@ article {
     margin: 0;
 }
 
-#questions {
-    display: flex;
+#audio.picture #main {
+    height: 90vh;
 }
 
-section {
+#audio #questions {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#audio section {
     border: 1px solid #000;
     border-radius: 10px;
     padding: 10px;
@@ -38,13 +81,18 @@ section {
     align-items: center;
     flex-flow: column;
 }
+#audio.picture section {
+    flex-grow: 1;
+    height: unset;
+    width: unset;
+}
 
-section h1 {
+#audio section h1 {
     margin: 0;
     padding: 0;
 }
 
-section button {
+#audio section button {
     display: block;
     height: 50px;
     width: 100px;
@@ -54,11 +102,16 @@ section button {
     color: #fff;
 }
 
-section p {
+#audio section img {
+    max-width: 390px;
+    max-height: 490px;
+}
+
+#audio section p {
     font-size: 10px;
 }
 
-.previous, .next {
+#audio .previous, .next {
     height: 120px;
     width: 50px;
     border-radius: 10px;
@@ -68,14 +121,14 @@ section p {
     font-size: 40px;
 }
 
-button:focus {
+#audio button:focus {
     outline: 0;
 }
 
-.previous:hover, .next:hover {
+#audio .previous:hover, .next:hover {
     background: #333;
 }
 
-.previous {
+#audio .previous {
     transform: rotate(180deg);
 }

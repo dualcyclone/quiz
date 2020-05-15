@@ -23,7 +23,6 @@ const persistValues = () => {
 const reinstateValues = () => {
   const previousValues = getCookie('playcount') && JSON.parse(getCookie('playcount'));
 
-  console.log(previousValues)
   if (!previousValues) {
     return;
   }
